@@ -35,26 +35,6 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
 });
 
-// const smoothScroll = (target) => {
-//   const element = document.querySelector(target);
-//   window.scroll({
-//     behavior: "smooth",
-//     left: 0,
-//     top: element.offsetTop,
-//   });
-// };
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const links = document.querySelectorAll("[data-scroll]");
-//   links.forEach((link) => {
-//     link.addEventListener("click", (e) => {
-//       e.preventDefault();
-//       const target = e.target.dataset.scroll;
-//       smoothScroll(target);
-//     });
-//   });
-// });
-
 function scrollToSection(sectionId) {
   const element = document.getElementById(sectionId);
   const offset = 30; // Sesuaikan offset dengan kebutuhan Anda
