@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="stylesheet" href="../public/css/output.css" />
+
+    <title>Fantoca | Portofolio Website</title>
+    <style>
+      /* Ganti warna scroll pada seluruh halaman */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(64 64 64); /* Ganti warna scroll thumb di sini */
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(
+          115 115 115
+        ); /* Ganti warna scroll thumb saat dihover di sini */
+      }
+
+      a.instagram-icon:hover svg path {
+        stroke: #ffd369; /* Ganti dengan warna kuning yang Anda inginkan */
+        transition: stroke 0.5s ease; /* Efek transisi warna saat hover */
+      }
+
+      a.whatsapp-icon:hover svg path {
+        stroke: #ffd369; /* Ganti dengan warna kuning yang Anda inginkan */
+        transition: stroke 0.5s ease; /* Efek transisi warna saat hover */
+      }
+
+      a.dribble-icon:hover svg path {
+        stroke: #ffd369; /* Ganti dengan warna kuning yang Anda inginkan */
+        transition: stroke 0.5s ease; /* Efek transisi warna saat hover */
+      }
+    </style>
+  </head>
+  <body class="bg-hitamPorto text-white">
+    <!-- Header Start -->
+    <header
+      id="mainHeader"
+      class="bg-hitamPorto fixed bottom-0 left-0 w-full flex items-center z-10 py-2 md:top-0 md:bottom-auto"
+    >
+      <div class="container px-8 lg:px-16">
+        <div class="flex items-center justify-between relative">
+          <div>
+            <a class="flex items-center" href="#home">
+              <img src="../assets/header-m.png" alt="logo-header" />
+              <span class="pl-3 font-semibold hidden md:inline-block"
+                >Fantoca</span
+              >
+            </a>
+          </div>
+          <div>
+            <button
+              class="flex font-bold py-3 px-6 text-white rounded-xl text-xs hover:opacity-80 ease-in-out min-w-fit items-center -translate-x-5 md:hidden"
+              id="emailButton"
+            >
+              <a href="mailto:fantocaa17@gmail.com" target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-2"
+                >
+                  <path
+                    d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+                    stroke="#FFFFFF"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+                    stroke="#FFFFFF"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              Work with me
+            </button>
+          </div>
+          <div class="flex items-center md:right-0">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-1 md:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute p-4 bg-bgContent rounded-lg max-w-[200px] w-full right-0 bottom-full -translate-y-4 md:block md:static md:max-w-full md:rounded-none md:bg-hitamPorto md:p-0 md:translate-y-[1px] md:translate-x-6"
+            >
+              <ul class="block md:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="py-3 flex mx-6 group-hover:text-kuningPorto"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#project"
+                    class="py-3 flex mx-6 group-hover:text-kuningPorto"
+                    >My Work</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skills"
+                    class="py-3 flex mx-6 group-hover:text-kuningPorto"
+                    >Tools & Skills</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#footer"
+                    class="py-3 flex mx-6 group-hover:text-kuningPorto"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-4">
+      <div class="container md:flex 2xl:mt-24">
+        <div class="flex flex-wrap md:flex-row-reverse">
+          <div class="w-full px-7 md:w-1/2">
+            <div class="relative lg:mt-9">
+              <img
+                src="../assets/pp.png"
+                alt="image"
+                class="mx-auto md:hidden"
+              />
+              <img
+                src="../assets/pp2.png"
+                alt="image"
+                class="hidden md:inline-block translate-y-[72px] lg:translate-y-28 xl:-translate-y-20 xl:scale-75 xl:translate-x-9 2xl:-translate-y-28"
+              />
+              <span
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10 mb-5 md:translate-y-2 lg:-translate-x-24 lg:-translate-y-1 xl:-translate-x-16 xl:-translate-y-72 2xl:-translate-y-[356px]"
+              >
+                <img
+                  src="../assets/ellipsesvg.svg"
+                  alt="circle"
+                  class="w-36 h-36 mb-4 scale-125 md:scale-[1.75] 2xl:scale-[2] lg:w-48 lg:h-48"
+                />
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="w-full self-center px-4 mt-9 md:w-1/2 md:mt-24 lg:mt-44 lg:pl-12 xl:mt-0 2xl"
+          >
+            <h2 class="text-kuningPorto font-bold text-lg lg:text-3xl">
+              Hi, I'm Anggik Fantoca
+              <span
+                class="block text-white text-2xl mt-2 lg:text-5xl lg:mt-4 lg:leading-[56px]"
+                >UI/UX Designer & Web Development Enthusiast
+              </span>
+            </h2>
+            <p class="mt-6 text-base lg:text-xl xl:w-[548px] lg:w-[412px]">
+              I'm from Indonesia and I've been working in the graphic design for
+              3 years. I have enthusiasm in web programming & design. I believe
+              design is a powerful tool for conveying messages and creating
+              engaging experiences. I am ready to make a valuable contribution
+              in a creative and dynamic team.
+            </p>
+            <div class="flex items-center mt-6">
+              <a href="mailto:fantocaa17@gmail.com" target="_blank"
+                ><button
+                  class="flex font-bold bg-kuningPorto py-3 px-4 lg:py-4 lg:px-6 text-hitamPorto rounded-xl text-base hover:opacity-80 ease-in-out min-w-fit"
+                  id="emailButton"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2"
+                  >
+                    <path
+                      d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+                      stroke="#1E1E1E"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+                      stroke="#1E1E1E"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Work with me
+                </button></a
+              >
+
+              <div class="flex md:pl-3 lg:pl-8 gap-4 lg:gap-6 ml-4 mt-2">
+                <a
+                  href="https://www.instagram.com/fantoca17/"
+                  target="_blank"
+                  class="instagram-icon"
+                  ><svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="lg:w-10 lg:h-10"
+                  >
+                    <path
+                      d="M12 29.3333H20C26.6667 29.3333 29.3334 26.6667 29.3334 20V12C29.3334 5.33332 26.6667 2.66666 20 2.66666H12C5.33335 2.66666 2.66669 5.33332 2.66669 12V20C2.66669 26.6667 5.33335 29.3333 12 29.3333Z"
+                      stroke="#EEEEEE"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16 20.6667C18.5773 20.6667 20.6666 18.5773 20.6666 16C20.6666 13.4227 18.5773 11.3333 16 11.3333C13.4227 11.3333 11.3333 13.4227 11.3333 16C11.3333 18.5773 13.4227 20.6667 16 20.6667Z"
+                      stroke="#EEEEEE"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M23.5148 9.33332H23.5303"
+                      stroke="#EEEEEE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></a>
+                <a
+                  href="https://wa.me/6281280578717"
+                  target="_blank"
+                  class="whatsapp-icon"
+                  ><svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="lg:w-10 lg:h-10"
+                  >
+                    <path
+                      d="M9.20002 27.4667C11.2 28.6667 13.6 29.3333 16 29.3333C23.3334 29.3333 29.3334 23.3333 29.3334 16C29.3334 8.66666 23.3334 2.66666 16 2.66666C8.66669 2.66666 2.66669 8.66666 2.66669 16C2.66669 18.4 3.33335 20.6667 4.40002 22.6667L3.10713 27.6393C2.91241 28.3882 3.60561 29.0651 4.34967 28.8525L9.20002 27.4667Z"
+                      stroke="#EEEEEE"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 19.798C22 20.014 21.9519 20.236 21.8498 20.452C21.7476 20.668 21.6154 20.872 21.4412 21.064C21.1467 21.388 20.8222 21.622 20.4557 21.772C20.0951 21.922 19.7046 22 19.2839 22C18.671 22 18.016 21.856 17.325 21.562C16.634 21.268 15.9429 20.872 15.2579 20.374C14.5669 19.87 13.9119 19.312 13.2869 18.694C12.668 18.07 12.1092 17.416 11.6104 16.732C11.1177 16.048 10.7211 15.364 10.4326 14.686C10.1442 14.002 10 13.348 10 12.724C10 12.316 10.0721 11.926 10.2163 11.566C10.3605 11.2 10.5889 10.864 10.9074 10.564C11.2919 10.186 11.7126 10 12.1572 10C12.3255 10 12.4937 10.036 12.644 10.108C12.8002 10.18 12.9384 10.288 13.0466 10.444L14.4407 12.406C14.5488 12.556 14.6269 12.694 14.681 12.826C14.7351 12.952 14.7651 13.078 14.7651 13.192C14.7651 13.336 14.7231 13.48 14.639 13.618C14.5608 13.756 14.4467 13.9 14.3025 14.044L13.8458 14.518C13.7797 14.584 13.7496 14.662 13.7496 14.758C13.7496 14.806 13.7556 14.848 13.7677 14.896C13.7857 14.944 13.8037 14.98 13.8157 15.016C13.9239 15.214 14.1102 15.472 14.3746 15.784C14.645 16.096 14.9334 16.414 15.2459 16.732C15.5704 17.05 15.8828 17.344 16.2013 17.614C16.5138 17.878 16.7722 18.058 16.9765 18.166C17.0065 18.178 17.0426 18.196 17.0846 18.214C17.1327 18.232 17.1808 18.238 17.2349 18.238C17.337 18.238 17.4151 18.202 17.4812 18.136L17.9379 17.686C18.0881 17.536 18.2323 17.422 18.3706 17.35C18.5088 17.266 18.647 17.224 18.7972 17.224C18.9114 17.224 19.0315 17.248 19.1637 17.302C19.2959 17.356 19.4342 17.434 19.5844 17.536L21.5734 18.946C21.7296 19.054 21.8378 19.18 21.9039 19.33C21.9639 19.48 22 19.63 22 19.798Z"
+                      stroke="#EEEEEE"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                    /></svg
+                ></a>
+                <a
+                  href="https://dribbble.com/Fantoca"
+                  target="_blank"
+                  class="dribble-icon"
+                  ><svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="lg:w-10 lg:h-10"
+                  >
+                    <path
+                      d="M24.6666 6.38666C21.2 12.4533 14.52 15.9333 7.55998 15.3067L3.33331 14.92"
+                      stroke="#EEEEEE"
+                      stroke-opacity="0.933333"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.33331 25.8267C10.8 19.76 17.48 16.28 24.44 16.9067L28.6666 17.2933"
+                      stroke="#EEEEEE"
+                      stroke-opacity="0.933333"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16 29.3333C23.3638 29.3333 29.3334 23.3638 29.3334 16C29.3334 8.63619 23.3638 2.66666 16 2.66666C8.63622 2.66666 2.66669 8.63619 2.66669 16C2.66669 23.3638 8.63622 29.3333 16 29.3333Z"
+                      stroke="#EEEEEE"
+                      stroke-opacity="0.933333"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.1733 4L14.4133 9.26667C17.2533 12.7867 19.2667 16.88 20.3333 21.2667L21.9467 27.92"
+                      stroke="#EEEEEE"
+                      stroke-opacity="0.933333"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Card Section Start -->
+    <section id="project">
+      <div class="container mx-auto pt-36 px-4 lg:px-12 xl:pt-12">
+        <h1 class="px-4 font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+          Recent <span class="text-kuningPorto">Project</span>
+        </h1>
+        <div class="px-4 grid gap-4 md:gap-8 md:grid-cols-2 xl:grid-cols-1">
+          <div class="pt-8 flex justify-center relative group">
+            <a
+              href="#"
+              class="block w-full p-8 bg-bgContent rounded-xl hover:opacity-75"
+            >
+              <div class="overflow-hidden rounded-xl">
+                <img
+                  src="../assets/Frame 1.png"
+                  alt="image"
+                  class="object-cover rounded-xl max-w-full transform scale-100 group-hover:scale-105 transition-all duration-500"
+                />
+              </div>
+              <h5
+                class="mt-4 mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Catatan - Note App
+              </h5>
+              <p
+                class="font-normal text-gray-700 dark:text-gray-400 text-sm md:text-base"
+              >
+                Boost your productivity with our user-friendly note app!
+                Capture, organize, and access your ideas seamlessly anytime,
+                anywhere. Stay on top of your tasks and never forget important
+                information again.
+              </p>
+            </a>
+          </div>
+          <div class="pt-4 flex justify-center md:pt-8 relative group">
+            <a
+              href="#"
+              class="block w-full p-8 bg-bgContent rounded-xl hover:opacity-75"
+            >
+              <div class="overflow-hidden rounded-xl">
+                <img
+                  src="../assets/Frame 2.png"
+                  alt="image"
+                  class="object-cover rounded-xl max-w-full transform scale-100 group-hover:scale-105 transition-all duration-500"
+                />
+              </div>
+
+              <h5
+                class="mt-4 mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Course - E-Learning App
+              </h5>
+              <p
+                class="font-normal text-gray-700 dark:text-gray-400 text-sm md:text-base"
+              >
+                Enhance your skills, pursue your passions, and achieve your
+                goals—all in one convenient platform. Join thousands of learners
+                and embark on a transformative learning journey today!
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Card Section End -->
+
+    <!-- Skills Section Start -->
+    <section id="skills" class="pt-36 pb-24">
+      <div class="container mx-auto">
+        <div class="px-4 lg:pl-9 xl:pl-12">
+          <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            Tools & <span class="text-kuningPorto">Skills</span>
+          </h1>
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 pt-8 leading-8 text-sm translate-x-5 md:list-inside md:text-lg md:leading-10 sm:text-base sm:leading-9 lg:text-2xl lg:leading-[3rem] lg:pl-2"
+          >
+            <ul class="list-disc">
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Corel Draw</li>
+              <li>Adobe Premiere Pro</li>
+              <li class="md:hidden">Adobe After Effects</li>
+              <li class="md:hidden">Ms. Word/Excel</li>
+            </ul>
+            <ul class="list-disc">
+              <li>HTML-5/CSS-3</li>
+              <li>Javascript</li>
+              <li>Bootstrap/TailwindCSS</li>
+              <li>PHP/MySQL</li>
+              <li>
+                ReactJS <span class="text-kuningPorto">(being studied)</span>
+              </li>
+              <li class="md:hidden">
+                NextJS
+                <span class="text-kuningPorto">(being studied)</span>
+              </li>
+              <li class="md:hidden">
+                Laravel
+                <span class="text-kuningPorto">(being studied)</span>
+              </li>
+            </ul>
+            <ul class="list-disc hidden md:block md:col-start-3">
+              <li>Adobe After Effects</li>
+              <li>Ms. Word/Excel</li>
+              <li>
+                NextJS <span class="text-kuningPorto">(being studied)</span>
+              </li>
+              <li>
+                Laravel <span class="text-kuningPorto">(being studied)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-bgContent pt-24 pb-12" id="footer">
+      <div class="container">
+        <div class="flex flext-wrap">
+          <div class="w-full px-4 mb-12 lg:px-8">
+            <h2 class="font-bold text-2xl">
+              Get in <span class="font-bold text-kuningPorto">touch</span>
+            </h2>
+            <p class="pt-4">
+              For bussiness inquiry please send email to
+              <a
+                href="mailto:fantocaa17@gmail.com"
+                target="_blank"
+                class="underline"
+                >fantoca17@gmail.com</a
+              >
+            </p>
+            <div class="flex gap-8 mt-4">
+              <a
+                href="https://www.instagram.com/fantoca17/"
+                target="_blank"
+                class="instagram-icon"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="lg:w-10 lg:h-10"
+                >
+                  <path
+                    d="M12 29.3333H20C26.6667 29.3333 29.3334 26.6667 29.3334 20V12C29.3334 5.33332 26.6667 2.66666 20 2.66666H12C5.33335 2.66666 2.66669 5.33332 2.66669 12V20C2.66669 26.6667 5.33335 29.3333 12 29.3333Z"
+                    stroke="#EEEEEE"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 20.6667C18.5773 20.6667 20.6666 18.5773 20.6666 16C20.6666 13.4227 18.5773 11.3333 16 11.3333C13.4227 11.3333 11.3333 13.4227 11.3333 16C11.3333 18.5773 13.4227 20.6667 16 20.6667Z"
+                    stroke="#EEEEEE"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M23.5148 9.33332H23.5303"
+                    stroke="#EEEEEE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <a
+                href="https://wa.me/6281280578717"
+                target="_blank"
+                class="whatsapp-icon"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="lg:w-10 lg:h-10"
+                >
+                  <path
+                    d="M9.20002 27.4667C11.2 28.6667 13.6 29.3333 16 29.3333C23.3334 29.3333 29.3334 23.3333 29.3334 16C29.3334 8.66666 23.3334 2.66666 16 2.66666C8.66669 2.66666 2.66669 8.66666 2.66669 16C2.66669 18.4 3.33335 20.6667 4.40002 22.6667L3.10713 27.6393C2.91241 28.3882 3.60561 29.0651 4.34967 28.8525L9.20002 27.4667Z"
+                    stroke="#EEEEEE"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 19.798C22 20.014 21.9519 20.236 21.8498 20.452C21.7476 20.668 21.6154 20.872 21.4412 21.064C21.1467 21.388 20.8222 21.622 20.4557 21.772C20.0951 21.922 19.7046 22 19.2839 22C18.671 22 18.016 21.856 17.325 21.562C16.634 21.268 15.9429 20.872 15.2579 20.374C14.5669 19.87 13.9119 19.312 13.2869 18.694C12.668 18.07 12.1092 17.416 11.6104 16.732C11.1177 16.048 10.7211 15.364 10.4326 14.686C10.1442 14.002 10 13.348 10 12.724C10 12.316 10.0721 11.926 10.2163 11.566C10.3605 11.2 10.5889 10.864 10.9074 10.564C11.2919 10.186 11.7126 10 12.1572 10C12.3255 10 12.4937 10.036 12.644 10.108C12.8002 10.18 12.9384 10.288 13.0466 10.444L14.4407 12.406C14.5488 12.556 14.6269 12.694 14.681 12.826C14.7351 12.952 14.7651 13.078 14.7651 13.192C14.7651 13.336 14.7231 13.48 14.639 13.618C14.5608 13.756 14.4467 13.9 14.3025 14.044L13.8458 14.518C13.7797 14.584 13.7496 14.662 13.7496 14.758C13.7496 14.806 13.7556 14.848 13.7677 14.896C13.7857 14.944 13.8037 14.98 13.8157 15.016C13.9239 15.214 14.1102 15.472 14.3746 15.784C14.645 16.096 14.9334 16.414 15.2459 16.732C15.5704 17.05 15.8828 17.344 16.2013 17.614C16.5138 17.878 16.7722 18.058 16.9765 18.166C17.0065 18.178 17.0426 18.196 17.0846 18.214C17.1327 18.232 17.1808 18.238 17.2349 18.238C17.337 18.238 17.4151 18.202 17.4812 18.136L17.9379 17.686C18.0881 17.536 18.2323 17.422 18.3706 17.35C18.5088 17.266 18.647 17.224 18.7972 17.224C18.9114 17.224 19.0315 17.248 19.1637 17.302C19.2959 17.356 19.4342 17.434 19.5844 17.536L21.5734 18.946C21.7296 19.054 21.8378 19.18 21.9039 19.33C21.9639 19.48 22 19.63 22 19.798Z"
+                    stroke="#EEEEEE"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                  /></svg
+              ></a>
+              <a
+                href="https://dribbble.com/Fantoca"
+                target="_blank"
+                class="dribble-icon"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="lg:w-10 lg:h-10"
+                >
+                  <path
+                    d="M24.6666 6.38666C21.2 12.4533 14.52 15.9333 7.55998 15.3067L3.33331 14.92"
+                    stroke="#EEEEEE"
+                    stroke-opacity="0.933333"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.33331 25.8267C10.8 19.76 17.48 16.28 24.44 16.9067L28.6666 17.2933"
+                    stroke="#EEEEEE"
+                    stroke-opacity="0.933333"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 29.3333C23.3638 29.3333 29.3334 23.3638 29.3334 16C29.3334 8.63619 23.3638 2.66666 16 2.66666C8.63622 2.66666 2.66669 8.63619 2.66669 16C2.66669 23.3638 8.63622 29.3333 16 29.3333Z"
+                    stroke="#EEEEEE"
+                    stroke-opacity="0.933333"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.1733 4L14.4133 9.26667C17.2533 12.7867 19.2667 16.88 20.3333 21.2667L21.9467 27.92"
+                    stroke="#EEEEEE"
+                    stroke-opacity="0.933333"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends -->
+    <script src="main.js"></script>
+  </body>
+</html>
