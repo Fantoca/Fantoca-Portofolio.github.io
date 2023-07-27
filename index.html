@@ -351,11 +351,26 @@
     <!-- Hero Section End -->
 
     <!-- Card Section Start -->
+
     <section id="project">
       <div class="container mx-auto pt-36 md:px-4 lg:px-12 xl:pt-12">
-        <h1 class="px-4 font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-          Recent <span class="text-kuningPorto">Project</span>
-        </h1>
+        <div class="flex justify-between px-4 items-center">
+          <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            Recent <span class="text-kuningPorto">Project</span>
+          </h1>
+          <a href="./public/page/page1.html">
+            <img
+              src="./assets/arrow-left.svg"
+              alt="arrow-left"
+              class="scale-75 translate-y-[2px] md:hidden"
+            />
+            <button
+              class="px-4 py-[6px] bg-kuningPorto text-hitamPorto rounded-lg font-semibold text-xs hover:opacity-80 ease-in-out hidden md:block lg:px-6 lg:py-2 lg:text-base xl:px-8"
+            >
+              View All
+            </button>
+          </a>
+        </div>
         <div class="px-4 grid gap-4 md:gap-8 md:grid-cols-2 xl:grid-cols-1">
           <div class="pt-8 flex justify-center relative group">
             <a

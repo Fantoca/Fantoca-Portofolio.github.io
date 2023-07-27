@@ -24,6 +24,8 @@ function openEmailLink(event) {
   // Membuka link email di jendela baru
   window.open(emailLink, "_blank");
 }
+// Menambahkan event listener untuk mengaktifkan fungsi openEmailLink saat tombol diklik
+emailButton.addEventListener("click", openEmailLink);
 
 //hamburger
 
@@ -63,5 +65,21 @@ navLinks.forEach((link) => {
   });
 });
 
-// Menambahkan event listener untuk mengaktifkan fungsi openEmailLink saat tombol diklik
-emailButton.addEventListener("click", openEmailLink);
+//pindah ke page1.html
+
+// Fungsi untuk menampilkan konten di div1 dan menyembunyikan konten di div2
+function showDiv(id) {
+  if (id === "div1") {
+    document.getElementById("contentDiv1").style.display = "block";
+    document.getElementById("contentDiv2").style.display = "none";
+  } else {
+    document.getElementById("contentDiv1").style.display = "none";
+    document.getElementById("contentDiv2").style.display = "block";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Default tampilkan konten di div1
+  document.getElementById("contentDiv1").style.display = "block";
+  document.getElementById("contentDiv2").style.display = "none";
+});
