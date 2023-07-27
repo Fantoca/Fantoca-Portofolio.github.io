@@ -72,9 +72,13 @@ function showDiv(id) {
   if (id === "div1") {
     document.getElementById("contentDiv1").style.display = "block";
     document.getElementById("contentDiv2").style.display = "none";
+    document.getElementById("div1").classList.add("text-kuningPorto");
+    document.getElementById("div2").classList.remove("text-kuningPorto");
   } else {
     document.getElementById("contentDiv1").style.display = "none";
     document.getElementById("contentDiv2").style.display = "block";
+    document.getElementById("div1").classList.remove("text-kuningPorto");
+    document.getElementById("div2").classList.add("text-kuningPorto");
   }
 }
 

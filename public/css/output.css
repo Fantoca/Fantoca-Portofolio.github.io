@@ -896,6 +896,10 @@ video {
   padding-right: 1rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -1175,6 +1179,10 @@ video {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:gap-8 {
