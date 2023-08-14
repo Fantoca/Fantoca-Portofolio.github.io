@@ -1269,6 +1269,14 @@ video {
   opacity: 0.8;
 }
 
+.hover\:opacity-50:hover {
+  opacity: 0.5;
+}
+
+.hover\:opacity-95:hover {
+  opacity: 0.95;
+}
+
 .active\:opacity-80:active {
   opacity: 0.8;
 }
