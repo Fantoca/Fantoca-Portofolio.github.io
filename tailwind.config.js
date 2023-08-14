@@ -11,6 +11,7 @@ module.exports = {
         kuningPorto: "#ffd369",
         hitamPorto: "#1e1e1e",
         bgContent: "#292929",
+        whitePorto: "#EEEEEE",
       },
       margin: {
         42: "168px",
