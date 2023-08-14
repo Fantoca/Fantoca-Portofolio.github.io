@@ -39,7 +39,7 @@ hamburger.addEventListener("click", function () {
 
 function scrollToSection(sectionId) {
   const element = document.getElementById(sectionId);
-  const offset = 30; // Sesuaikan offset dengan kebutuhan Anda
+  const offset = 0; // Sesuaikan offset dengan kebutuhan Anda
   const bodyRect = document.body.getBoundingClientRect().top;
   const elementRect = element.getBoundingClientRect().top;
   const elementPosition = elementRect - bodyRect;
